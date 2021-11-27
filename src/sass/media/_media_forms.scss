@@ -1,0 +1,19 @@
+@media (max-width: 1024px) {
+    .feed-form {
+        width: 280px;
+        input {
+            height: 40px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .feed-form {
+        width: auto;
+        align-items: center;
+        input {
+            height: 40px;
+            width: 280px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@media (max-width: 1024px) {
+    .carousel {
+        #tns1-ow {
+            width: 600px;
+        }
+        &-inner {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        padding: 40px 0 40px 0;
+        #tns1-ow {
+            width: 340px;
+        }
+        &-inner {
+            img {
+                width: 80%;
+            }
+        }
+    }
+    button {
+        img {
+            width: 80%;
+        }
+    }
+}

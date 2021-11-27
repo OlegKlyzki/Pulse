@@ -1,0 +1,18 @@
+@media (max-width: 1920px) {
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 25px;
+        &_left {
+            font-size: 25px;
+            text-align: center;
+        }
+        br {
+            display: none;
+        }
+    }
+}

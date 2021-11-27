@@ -1,0 +1,30 @@
+.button {
+    margin-top: 5px;
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: $main-color;
+    color: #ffffff;
+    font-family: "Museo Sans Cyrl 500";
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    &_main {
+        margin-top: 130px;
+        width: 375px;
+        height: 60px;
+        font-size: 19px;
+    }
+    &_submit {
+        width: 300px;
+        height: 55px;
+        font-size: 16px;
+    }
+    &_mini {
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
