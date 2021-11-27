@@ -52,8 +52,20 @@
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 426px) {
     .container {
-        max-width: 340px;
+        max-width: 390px;
+    }
+}
+
+@media (max-width: 395px) {
+    .container {
+        max-width: 365px;
+    }
+}
+
+@media (max-width: 321px) {
+    .container {
+        max-width: 300px;
     }
 }

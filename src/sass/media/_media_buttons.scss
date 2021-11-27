@@ -69,3 +69,37 @@
         }
     }
 }
+
+@media (max-width: 395px) {
+    .button {
+        margin-top: 10px;
+        &_main {
+            width: 260px;
+            height: 35px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .button {
+        &_hidden {
+            display: none;
+        }
+        &_phone {
+            display: block;
+            width: 30px;
+            height: 30px;
+            .icon {
+                width: 20px;
+                height: 20px;
+                color: white;
+            }
+        }
+        &_main {
+            width: 200px;
+            height: 30px;
+            font-size: 12px;
+        }
+    }
+}
