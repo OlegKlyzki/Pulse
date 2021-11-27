@@ -119,7 +119,16 @@
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 395px) {
+    .promo {
+        min-height: 300px;
+        &__wrapper {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
     .promo {
         &__header {
             text-align: center;

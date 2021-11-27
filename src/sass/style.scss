@@ -52,8 +52,14 @@
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 395px) {
     .container {
-        max-width: 340px;
+        max-width: 365px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 320px;
     }
 }

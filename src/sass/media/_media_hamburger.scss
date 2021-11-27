@@ -2,7 +2,7 @@
     .hamburger {
         display: block;
         position: absolute;
-        right: 20px;
+        right: 30px;
         top: 89px;
         width: 30px;
         height: 24px;
@@ -33,12 +33,19 @@
 
 @media (max-width: 576px) {
     .hamburger {
-        right: 17px;
-        top: 20px;
+        right: 65px;
+        top: 85px;
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 395px) {
+    .hamburger {
+        right: 5px;
+        top: 18px;
+    }
+}
+
+@media (max-width: 320px) {
     .hamburger {
         right: 5px;
         top: 18px;

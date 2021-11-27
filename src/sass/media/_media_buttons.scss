@@ -69,3 +69,14 @@
         }
     }
 }
+
+@media (max-width: 395px) {
+    .button {
+        margin-top: 10px;
+        &_main {
+            width: 260px;
+            height: 35px;
+            font-size: 15px;
+        }
+    }
+}

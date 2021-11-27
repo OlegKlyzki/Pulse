@@ -72,12 +72,39 @@
     .catalog {
         &__tabs {
             margin-top: 40px;
+            padding-left: 28px;
         }
         &__tab {
-            font-size: 13px;
+            width: 120px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 12px;
         }
         &__content {
             margin-top: 40px;
+        }
+        &-item {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 395px) {
+    .catalog {
+        &__tabs {
+            margin-top: 20px;
+        }
+        &__tab {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 10px;
+        }
+        &__content {
+            margin-top: 40px;
+        }
+        &-item {
+            margin-right: 0;
         }
     }
 }

@@ -48,7 +48,27 @@
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 395px) {
+    .header {
+        display: block;
+        &__logo {
+            display: flex;
+            margin: 0 auto;
+        }
+        &__phone {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        &__contacts {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 320px) {
     .header {
         display: block;
         &__logo {

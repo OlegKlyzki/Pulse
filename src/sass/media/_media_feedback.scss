@@ -46,3 +46,14 @@
         }
     }
 }
+
+@media (max-width: 395px) {
+    .feedback {
+        &__items {
+            margin-top: 50px;
+        }
+        &__text {
+            width: 315px;
+        }
+    }
+}
