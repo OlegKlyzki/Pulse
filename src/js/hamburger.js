@@ -1,6 +1,6 @@
 function init ()
 {
-    const menu = document.querySelector(".header"),
+    const menu = document.querySelector(".promo__icons"),
     menuItem = document.querySelectorAll(".menu_item"),
     hamburger = document.querySelector('.hamburger');
 
@@ -10,7 +10,7 @@ function init ()
         console.log( '2' );
         hamburger.classList.toggle('hamburger_active');
         console.log( '2.1' );
-        menu.classList.toggle('header_active');
+        menu.classList.toggle('promo__icons_active');
     });
 
     menuItem.forEach(item => {

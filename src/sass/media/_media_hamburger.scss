@@ -2,8 +2,8 @@
     .hamburger {
         display: block;
         position: absolute;
-        right: 20px;
-        top: 15px;
+        right: 30px;
+        top: 89px;
         width: 30px;
         height: 24px;
         span {
@@ -15,7 +15,6 @@
             transition: 0.5s all;
         }
         &_active {
-            padding-top: 15px;
             span {
                 margin-bottom: -3px;
                 &:first-child {
@@ -29,5 +28,26 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 576px) {
+    .hamburger {
+        right: 65px;
+        top: 85px;
+    }
+}
+
+@media (max-width: 395px) {
+    .hamburger {
+        right: 5px;
+        top: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    .hamburger {
+        right: 5px;
+        top: 18px;
     }
 }

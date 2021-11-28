@@ -14,6 +14,10 @@
             height: 55px;
             font-size: 16px;
         }
+        &_mini {
+            width: 131px;
+            height: 40px;
+        }
     }
 }
 
@@ -46,6 +50,33 @@
             width: 280px;
             height: 50px;
             font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        &_main {
+            margin-top: 45px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .button {
+        &_main {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 395px) {
+    .button {
+        margin-top: 10px;
+        &_main {
+            width: 260px;
+            height: 35px;
+            font-size: 15px;
         }
     }
 }

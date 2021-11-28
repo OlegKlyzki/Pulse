@@ -39,3 +39,27 @@
         max-width: 825px;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 430px;
+    }
+}
+
+@media (max-width: 395px) {
+    .container {
+        max-width: 365px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
+}
