@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        width: 30px;
+        height: 24px;
+        span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: $main-color;
+            margin-bottom: 3px;
+            transition: 0.5s all;
+        }
+        &_active {
+            padding-top: 15px;
+            span {
+                margin-bottom: -3px;
+                &:first-child {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+}

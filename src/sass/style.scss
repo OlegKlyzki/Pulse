@@ -1,0 +1,41 @@
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/buttons';
+@import 'blocks/title';
+@import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/feedback';
+@import 'media/media';
+
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto; 
+}
+
+@media (max-width: 1920px) {
+    .container {
+        max-width: 950px; 
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 885px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 825px;
+    }
+}

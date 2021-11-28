@@ -1,0 +1,12 @@
+@media (max-width: 1024px) {
+    .carousel {
+        #tns1-ow {
+            width: 600px;
+        }
+        &-inner {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@media (max-width: 1920px) {
+    .feedback {
+        &__img {
+            width: auto;
+            img {
+                width: 100%;
+            }
+        }
+        &__text {
+            width: 650px;
+            padding-left: 62px;
+        }
+        &__name {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .feedback {
+        &__descr {
+            font-size: 15px;
+        }
+    }
+}

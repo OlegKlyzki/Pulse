@@ -1,0 +1,35 @@
+.feedback {
+    &__items {
+        margin-top: 70px;
+        display: flex;
+    }
+    &__img {
+        width: 18%;
+        height: 18%;
+        img {
+            width: 100%;
+        }
+    }
+    &__text {
+        width: 830px;
+        padding-left: 90px;
+        padding-bottom: 100px;
+    }
+    &__name {
+        color: #0d0d0d;
+        font-family: "Museo Sans Cyrl 700";
+        font-size: 20px;
+    }
+    &__marathon {
+        margin-top: 7px;
+        color: #646464;
+        font-family: "Museo Sans Cyrl 300";
+        font-size: 16px;
+    }
+    &__descr {
+        margin-top: 20px;
+        color: #0d0d0d;
+        font-family: "Museo Sans Cyrl 300";
+        font-size: 18px;
+    }
+}
