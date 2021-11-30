@@ -17,3 +17,11 @@
         }
     }
 }
+
+@media (max-width: 321px) {
+    .feed-form {
+        input {
+            width: 260px;
+        }
+    }
+}

@@ -18,7 +18,7 @@ function init ()
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
         })
-    })
+    });
 }
 
 if( document.readyState !== 'loading' ) {

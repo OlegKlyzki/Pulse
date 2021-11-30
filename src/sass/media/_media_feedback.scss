@@ -65,3 +65,17 @@
         }
     }
 }
+
+@media (max-width: 321px) {
+    .feedback {
+        &__items {
+            margin-top: 25px;
+        }
+        &__text {
+            width: 260px;
+        }
+        &__descr {
+            font-size: 16px;
+        }
+    }
+}

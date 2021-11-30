@@ -8,3 +8,14 @@
         }
     }
 }
+
+@media (max-width: 321px) {
+    .consultation {
+        min-height: 490px;
+        padding: 20px 0 40px 0;
+        &__descr {
+            margin-top: 20px;
+            font-size: 17px;
+        }
+    }
+}

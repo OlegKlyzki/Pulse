@@ -16,7 +16,7 @@
         margin-bottom: 35px;
         color: #ffffff;
         font-family: "Museo Sans Cyrl 500";
-        font-size: 20px;
+        font-size: 23px;
         text-align: center;
     }
     &__phone {
@@ -24,7 +24,7 @@
         text-align: center;
         color: #ffffff;
         font-family: "Museo Sans Cyrl 700";
-        font-size: 20px;
+        font-size: 22px;
         text-decoration: none;
         &:hover {
             color: rgb(105, 19, 19);
@@ -52,5 +52,8 @@
         justify-content: center;
         align-items: center;
         
+    }
+    &__mobile {
+        display: none;
     }
 }

@@ -62,3 +62,16 @@
         }
     }
 }
+
+@media (max-width: 321px) {
+    .carousel {
+        #tns1-ow {
+            width: 210px;
+        }
+    }
+    button {
+        img {
+            width: 50%;
+        }
+    }
+}
