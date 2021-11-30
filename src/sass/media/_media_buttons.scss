@@ -80,3 +80,29 @@
         }
     }
 }
+
+@media (max-width: 321px) {
+    .button {
+        &_hidden {
+            display: none;
+        }
+        &_phone {
+            display: block;
+            width: 30px;
+            height: 30px;
+            a {
+                text-decoration: none;
+            }
+            span {
+                display: block;
+                font-size: 20px;
+                color: white;
+            }
+        }
+        &_main {
+            width: 200px;
+            height: 30px;
+            font-size: 12px;
+        }
+    }
+}

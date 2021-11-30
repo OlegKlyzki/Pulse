@@ -11,6 +11,10 @@
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+    &:hover {
+        box-shadow: 3px 3px 20px $main-color;
+        border: none;
+    }
     &_main {
         margin-top: 130px;
         width: 375px;
@@ -26,5 +30,8 @@
         width: 131px;
         height: 40px;
         font-size: 14px;
+    }
+    &_phone {
+        display: none;
     }
 }

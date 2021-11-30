@@ -38,6 +38,12 @@
     }
 }
 
+@media (max-width: 426px) {
+    .hamburger {
+        right: 12px;
+    }
+}
+
 @media (max-width: 395px) {
     .hamburger {
         right: 5px;

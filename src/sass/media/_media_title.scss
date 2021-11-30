@@ -16,3 +16,21 @@
         }
     }
 }
+
+@media (max-width: 395px) {
+    .title {
+        font-size: 23px;
+        &_left {
+            font-size: 23px;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .title {
+        font-size: 20px;
+        &_left {
+            font-size: 20px;
+        }
+    }
+}
