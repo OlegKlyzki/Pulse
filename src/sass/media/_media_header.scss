@@ -68,7 +68,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
     .header {
         display: block;
         &__logo {
@@ -79,9 +79,7 @@
             font-size: 13px;
         }
         &__contacts {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            display: none;
         }
     }
 }

@@ -47,6 +47,14 @@
     }
 }
 
+@media (max-width: 426px) {
+    .feedback {
+        &__text {
+            width: 345px;
+        }
+    }
+}
+
 @media (max-width: 395px) {
     .feedback {
         &__items {

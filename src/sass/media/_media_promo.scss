@@ -128,7 +128,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
     .promo {
         &__header {
             text-align: center;
@@ -137,6 +137,11 @@
         &__subheader {
             text-align: center;
             font-size: 14px;
+        }
+        &__button {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
