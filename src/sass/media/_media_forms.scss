@@ -18,10 +18,23 @@
     }
 }
 
+@media (max-width: 426px) {
+    .feed-form {
+        input {
+            width: 200px;
+            height: 35px;
+            font-size: 13px;
+        }
+    }
+}
+
 @media (max-width: 321px) {
     .feed-form {
         input {
             width: 260px;
-        }
+        }  
+    }
+    #feed-form_small {
+        width: 180px;
     }
 }
