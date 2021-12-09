@@ -55,10 +55,37 @@ document.querySelector('.next').addEventListener('click', function () {
         $('.modal__close').on('click', function() {
             $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
         });
-        $('.button_mini').on('click', function() {
-            $('.overlay, #order').fadeIn('slow');
+        
+        $('.button_mini').each(function(i) {
+            $(this).on('click', function() {
+                $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+                $('.overlay, #order').fadeIn('slow');
+            })
         });
 
-        
+        function validateForms(form) {
+            $(form).validate({
+                rules: {
+                    name: "required",
+                    phone: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                   name: "Пожалуйста, введите ваше имя",
+                   phone: "Пожалуйста, введите ваш номер телефона",
+                   email: {
+                    required: "Пожалуйста, введите вашу почту",
+                    email: "Неправильно введен адрес почты"
+                   }
+                }
+            });
+        };
+
+        validateForms('#consultation-form');
+        validateForms('#consultation form');
+        validateForms('#order form');
     });
     })(jQuery);
