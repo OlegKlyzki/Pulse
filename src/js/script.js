@@ -87,7 +87,10 @@ document.querySelector('.next').addEventListener('click', function () {
         validateForms('#consultation-form');
         validateForms('#consultation form');
         validateForms('#order form');
+<<<<<<< HEAD
 
        $('input[name=phone]').mask('+7 (999) 999-99-99');
+=======
+>>>>>>> e55bd1895df0a2eb07df110d52254564595c294b
     });
     })(jQuery);
