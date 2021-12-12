@@ -1,0 +1,31 @@
+@media (max-width: 426px) {
+    .modal {
+        width: 255px;
+        min-height: 370px;
+        padding: 25px 25px 25px 25px;
+        &__subtitle {
+            font-size: 12px;
+        }
+        &__descr {
+            font-size: 10px;
+        }
+        label.error {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .modal {
+        width: 230px;
+        min-height: 340px;
+        padding: 25px 20px 20px 20px;
+        &__subtitle {
+            font-size: 11px;
+        }
+        &__descr {
+            font-size: 9px;
+        }
+    }
+}

@@ -70,6 +70,16 @@
     }
 }
 
+@media (max-width: 426px) {
+    .button {
+        &_submit {
+            width: 200px;
+            height: 35px;
+            font-size: 12px;
+        }
+    }
+}
+
 @media (max-width: 395px) {
     .button {
         margin-top: 10px;
@@ -107,5 +117,8 @@
         &_submit {
             width: 260px;
         }
+    }
+    #button_small {
+        width: 180px;
     }
 }

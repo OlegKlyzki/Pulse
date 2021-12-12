@@ -30,7 +30,8 @@ document.querySelector('.next').addEventListener('click', function () {
         $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
             $(this)
                 .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
-                .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index())
+                .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active')
+                .eq($(this).index())
                 .addClass('catalog__content_active');
             });
         
@@ -40,9 +41,9 @@ document.querySelector('.next').addEventListener('click', function () {
                     e.preventDefault();
                     $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
                     $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-                })
+                });
             });
-        };
+        }
 
         toggleSlide('.catalog-item__link');
         toggleSlide('.catalog-item__back');
@@ -60,7 +61,32 @@ document.querySelector('.next').addEventListener('click', function () {
             $(this).on('click', function() {
                 $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
                 $('.overlay, #order').fadeIn('slow');
-            })
+            });
         });
+
+        function validateForms(form) {
+            $(form).validate({
+                rules: {
+                    name: "required",
+                    phone: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                   name: "Пожалуйста, введите ваше имя",
+                   phone: "Пожалуйста, введите ваш номер телефона",
+                   email: {
+                    required: "Пожалуйста, введите вашу почту",
+                    email: "Неправильно введен адрес почты"
+                   }
+                }
+            });
+        }
+
+        validateForms('#consultation-form');
+        validateForms('#consultation form');
+        validateForms('#order form');
     });
     })(jQuery);
