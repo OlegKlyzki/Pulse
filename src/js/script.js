@@ -62,5 +62,30 @@ document.querySelector('.next').addEventListener('click', function () {
                 $('.overlay, #order').fadeIn('slow');
             })
         });
+
+        function validateForms(form) {
+            $(form).validate({
+                rules: {
+                    name: "required",
+                    phone: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                   name: "Пожалуйста, введите ваше имя",
+                   phone: "Пожалуйста, введите ваш номер телефона",
+                   email: {
+                    required: "Пожалуйста, введите вашу почту",
+                    email: "Неправильно введен адрес почты"
+                   }
+                }
+            });
+        };
+
+        validateForms('#consultation-form');
+        validateForms('#consultation form');
+        validateForms('#order form');
     });
     })(jQuery);
