@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <!-- <link rel="stylesheet" href="css/slick.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse</title>
 </head>
 <body>
-    <div class="promo">
+    <div id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo"><img src="icons/logo.png" alt="logo"></a>
@@ -69,7 +70,7 @@
                 </div>
             
                 <div class="advantages__item">
-                    <img src="icons/advantages_icons/advantages_heart.png" alt="heart" class="advantages__icon">
+                    <img src="icons/advantages_icons/advantages_heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subtitle">Заботимся о здоровье</div>
                     <div class="advantages__descr">Мы работаем для того, 
                     чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
@@ -100,26 +101,12 @@
         </div>
     </section>
 
-    <!-- <section class="carousel"> - slick
-        <div class="container">
-            <div class="carousel__inner">
-                <div><img src="img/Carousel/slide_1.png" alt="watch"></div>
-                <div><img src="img/Carousel/slide_2.png" alt="watch"></div>
-                <div><img src="img/Carousel/slide_3.png" alt="watch"></div>
-              </div>
-        </div>
-    </section> -->
-
-    <section class="carousel"> <!-- - tiny -->
-        <div class="container">
-            <div class="carousel-inner id="tns1-ow">
-                <div><img src="img/Carousel/slide_1.png" alt="watch"></div>
-                <div><img src="img/Carousel/slide_2.png" alt="watch"></div>
-                <div><img src="img/Carousel/slide_3.png" alt="watch"></div>
-            </div>
-            <button type="button" class="prev"><img src="img/Carousel/prev_arrow.svg"></button>
-            <button type="button" class="next"><img src="img/Carousel/next_arrow.svg"></button>
-        </div>
+    <section class="carousel">
+        <div class="carousel__slider">
+            <div><img src="img/Carousel/slide_1.png" alt="watch"></div>
+            <div><img src="img/Carousel/slide_2.png" alt="watch"></div>
+            <div><img src="img/Carousel/slide_3.png" alt="watch"></div>
+          </div>
     </section>
 
     <section class="catalog">
@@ -377,7 +364,7 @@
     <section class="feedback">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="feedback__items">
+            <div class="feedback__items animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
                 <img src="img/Feedback/feedback_irina.png" alt="irina" class="feedback__img">
                 <div class="feedback__text">
                     <div class="feedback__name">Ирина Иванченко</div>
@@ -393,7 +380,7 @@
                 </div>
             </div>
 
-            <div class="feedback__items">
+            <div class="feedback__items animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
                 <img src="img/Feedback/feedback_ivan.png" alt="ivan" class="feedback__img">
                 <div class="feedback__text">
                     <div class="feedback__name">Иван Сёмочкин</div>
@@ -407,7 +394,7 @@
                 </div>
             </div>
 
-            <div class="feedback__items">
+            <div class="feedback__items animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
                 <img src="img/Feedback/feedback_yulia.png" alt="yulia" class="feedback__img">
                 <div class="feedback__text">
                     <div class="feedback__name">Юлия Дашкина</div>
@@ -453,7 +440,7 @@
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input class="input_small" name="name" placeholder="Ваше имя" type="text">
-                <input class="input_small" name="phone" placeholder="Ваш телефон""> 
+                <input class="input_small" name="phone" placeholder="Ваш телефон"> 
                 <input class="input_small" name="email" placeholder="Ваш E-mail" type="email"> 
 
                 <button class="button button_submit" id="button_small">заказать кОНСУЛЬТАЦИЮ</button>
@@ -469,7 +456,7 @@
                 <input class="input_small" name="phone" placeholder="Ваш телефон">
                 <input class="input_small" name="email" placeholder="Ваш E-mail" type="email">
 
-                <button class="button button_submit" id="button_small">Купить</button>
+                <button class="button button_submit" id="button_smallorder">Купить</button>
             </form>
         </div>
 
@@ -480,15 +467,16 @@
         </div>
     </div>
 
-    <a href="#" class="pageup"><img src="icons/up.svg" alt="up"></a>
+    <a href="#up" class="pageup"><img src="icons/up.svg" alt="up"></a>
 
-    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/script.js"></script>
 </body>

@@ -1,28 +1,61 @@
-// $(document).ready(function(){
-//     $('.carousel__inner').slick({
-//         speed:  1000,
-//         // adaptiveHeight: true,
-//         prevArrow: '<button type="button" class="slick-prev"><img src="img/carousel/prev_arrow.png"></button>',
-//         nextArrow: '<button type="button" class="slick-next"><img src="img/carousel/next_arrow.png"></button>'
-//     });
-// });
+$(document).ready(function(){
+	  $('.carousel__slider').slick({
+		speed: 1200,
+		accessibility: true,
+		arrows: true,
+		dots: false,
+		dotsClass: 'slick-dots',
+		prevArrow:
+		'<button type="button" data-role="none" class="slick-prev"><img src="../img/carousel/prev_arrow.svg" alt="prev_arrow"></button>',
+		nextArrow:
+		'<button type="button" data-role="none" class="slick-next"><img src="../img/carousel/next_arrow.svg" alt="next_arrow"></button>',
 
-const slider = tns({
-	container: '.carousel-inner',
-	items: 1,
-	slideBy: 'page',
-	speed: 1200,
-	controls: false,
-	nav: false
-  });
+		responsive: [{
 
-document.querySelector('.prev').addEventListener('click', function () {
-	slider.goTo('prev');
-});
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 1,
+				dots: true,
+				arrows: false,
+				infinite: true
+			}
+		
+		  }, {
+		
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				dots: true,
+				arrows: false
+			}
+		
+		  }, {
 
-document.querySelector('.next').addEventListener('click', function () {
-	slider.goTo('next');
-});
+			breakpoint: 426,
+			settings: {
+				slidesToShow: 1,
+				arrows: false,
+				dots: true
+			}
+
+		  }, {
+
+			breakpoint: 321,
+			settings: {
+				slidesToShow: 1,
+				arrows: false,
+				dots: true
+			}
+
+		  }, {
+		
+			breakpoint: 300,
+			settings: "unslick" // destroys slick
+		
+		  }]
+	  });
+	});
+	
 
 (function($) {
 	$(function() {
@@ -120,14 +153,12 @@ document.querySelector('.next').addEventListener('click', function () {
 			}
 	   });
 
-	   $("a[href^='#']").click(function() {
-			const _href = $(this).attr("href");
-			$('html, body').animate({
-				scrollTop: $(_href).offset().top
-			}, 800, function() {
-				window.location._href = _href;
-			});
-			return false;
-	   });
+	   $("a[href=#up]").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    	});
+
+		new WOW().init();
 	});
 	})(jQuery);
