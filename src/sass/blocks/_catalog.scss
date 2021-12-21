@@ -121,16 +121,22 @@
                 margin-right: 20px;
             }
         }
-        &__list {
-            position: relative;
+        &__menu {
             width: 50%;
+            transform: translateX(0%);
+            transition: 0.5s all;
+            &_active {
+                transform: translateX(-109%);
+                margin-left: 0px;
+            } 
+        } 
+        &__list {
+            list-style: none;
             padding: 0;
             margin: 0;
             margin-left: 20px;
             padding-right: 20px;
             padding-left: 19px;
-            list-style: none;
-            transform: translateX(0%);
             transition: 0.5s all;
             li {
                 position: relative;
@@ -150,24 +156,30 @@
             }
             &_active {
                 transform: translateX(-100%);
+                transition: 0.5s all;
                 margin-left: 0px;
             }
-        }
+        }    
         &__back {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(calc(-50% - 19px));
+            position: relative;
             display: block;
+            left: 155px;
+            top: 55px;
             color: $main-color;
             font-size: 14px;
             font-weight: 500;
             text-decoration: underline;
             text-transform: uppercase;
+            transform: translateX(0%);
+            transition: 0.5s all;
             &:hover {
                 color: $main-color;
             }
-        }
+            &_active {
+                transform: translateX(calc(-100% - 10px));
+                transition: 0.5s all;
+            }
+        }    
     }
 }
 
