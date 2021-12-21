@@ -73,7 +73,8 @@ $(document).ready(function(){
 				$(this).on('click', function(e) {
 					e.preventDefault();
 					$('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-					$('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+					$('.catalog-item__menu .catalog-item__list').eq(i).toggleClass('catalog-item__menu_active .catalog-item__list_active');
+					$('.catalog-item__back').eq(i).toggleClass('catalog-item__back_active');
 				});
 			});
 		}
@@ -160,5 +161,8 @@ $(document).ready(function(){
     	});
 
 		new WOW().init();
+		$('.feedback__items animate__animated animate__fadeInUp wow').$(document).ready(function(e) {
+			e.preventDefault();
+		});
 	});
 	})(jQuery);
