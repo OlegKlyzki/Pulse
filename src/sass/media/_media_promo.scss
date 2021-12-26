@@ -138,6 +138,7 @@
 
 @media (max-width: 321px) {
     .promo {
+        position: relative;
         min-height: 250px;
         &__header {
             text-align: center;
@@ -151,6 +152,17 @@
             width: 85%;
             display: flex;
             justify-content: space-between;
+            a {
+                text-decoration: none;
+            }
+            span {
+                position: absolute;
+                right: 39px;
+                top: 128px;
+                display: block;
+                font-size: 20px;
+                color: white;
+            } 
         }
     }
 }
