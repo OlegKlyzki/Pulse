@@ -1,0 +1,22 @@
+@media (max-width: 1024px) {
+    .pageup {
+        bottom: 40px;
+        right: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pageup {
+        bottom: 335px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 426px) {
+    .pageup {
+        right: 5px;
+        img {
+            width: 80%;
+        }
+    }
+}
