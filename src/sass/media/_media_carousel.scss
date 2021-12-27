@@ -1,11 +1,43 @@
 @media (max-width: 1024px) {
     .carousel {
-        #tns1-ow {
+        &__slider {
             width: 600px;
-        }
-        &-inner {
             img {
-                width: 80%;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        .slick-dots {
+            bottom: 0;
+            li {
+                border: 1px solid black;
+                border-radius: 100%;
+                width: 15px;
+                height: 15px;
+                margin-right: 15px;
+                background-color: rgba(255, 0, 0, 0.8);
+                &:hover {
+                    width: 17px;
+                    height: 17px;
+                } 
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        &__slider {
+            width: 500px;
+        }
+        .slick-dots {
+            position: absolute;
+            bottom: -20px;
+            .slick-active {
+                &:hover {
+                    width: 17px;
+                    height: 17px;
+                } 
             }
         }
     }
@@ -13,19 +45,13 @@
 
 @media (max-width: 576px) {
     .carousel {
-        padding: 40px 0 40px 0;
-        #tns1-ow {
+        padding: 40px 0 20px 0;
+        &__slider {
             width: 340px;
-        }
-        &-inner {
             img {
-                width: 80%;
+                width: 100%;
+                margin: 0 auto;
             }
-        }
-    }
-    button {
-        img {
-            width: 80%;
         }
     }
 }
@@ -33,45 +59,40 @@
 @media (max-width: 426px) {
     .carousel {
         padding: 20px 0 20px 0;
-        #tns1-ow {
+        &__slider {
             width: 300px;
-        }
-        &-inner {
-            img {
-                width: 100%;
-            }
-        }
-    }
-    button {
-        img {
-            width: 70%;
         }
     }
 }
 
 @media (max-width: 395px) {
     .carousel {
-        padding: 20px 0 20px 0;
-        #tns1-ow {
+        &__slider {
             width: 270px;
-        }
-    }
-    button {
-        img {
-            width: 60%;
         }
     }
 }
 
 @media (max-width: 321px) {
     .carousel {
-        #tns1-ow {
-            width: 210px;
+        &__slider {
+            width: 240px;
         }
-    }
-    button {
-        img {
-            width: 50%;
+        .slick-dots {
+            li {
+                width: 13px;
+                height: 13px;
+                &:hover {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+        .slick-active {
+            &:hover {
+                width: 15px;
+                height: 15px;
+            } 
         }
     }
 }

@@ -100,14 +100,6 @@
             display: block;
             width: 30px;
             height: 30px;
-            a {
-                text-decoration: none;
-            }
-            span {
-                display: block;
-                font-size: 20px;
-                color: white;
-            }
         }
         &_main {
             width: 200px;
@@ -119,6 +111,9 @@
         }
     }
     #button_small {
+        width: 180px;
+    }
+    #button_smallorder {
         width: 180px;
     }
 }
