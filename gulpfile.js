@@ -70,4 +70,9 @@ gulp.task('fonts_icomoon', function() {
         .pipe(gulp.dest("dist/fonts_icomoon"));
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'fonts', 'icons', 'mailer', 'images', 'fonts_icomoon'));
+gulp.task('fonts_slick', function() {
+    return gulp.src("src/fonts_slick/**/*")
+        .pipe(gulp.dest("dist/fonts_slick"));
+});
+
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'fonts', 'icons', 'mailer', 'images', 'fonts_icomoon', 'fonts_slick'));
